@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power BI - Visualización y Modelado de Datos | CCE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/fa-subset.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html#inicio" class="navbar-logo">
+      <img src="assets/images/brand/cce-logo.png" alt="CCE Logo" class="logo-img" />
+    </a>
+    <div class="navbar-center">
+      <div class="navbar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar cursos..." autocomplete="off" id="navbarSearchInput" />
+        <div class="navbar-search-dropdown" id="navbarSearchDropdown"></div>
+      </div>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#ejes">Ejes</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="index.html#certificaciones">STPS/CONOCER</a></li>
+        <li><a href="index.html#guias">Recursos</a></li>
+        <li class="nav-cotizar-mobile"><a href="index.html#cotizador" class="nav-cotizar">Cotizar</a></li>
+      </ul>
+    </div>
+    <a href="index.html#cotizador" class="navbar-cotizar">Cotizar</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="curso-hero">
+      <img class="curso-hero-bg" src="assets/images/heroes/catalogo-cursos.jpg" alt="Panel de visualización de datos" />
+      <div class="curso-hero-overlay"></div>
+      <div class="curso-hero-content">
+        <nav class="curso-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html#inicio">Inicio</a><span>/</span><a href="cursos.html">Cursos</a><span>/</span><a href="cursos.html">Habilidades digitales</a>
+        </nav>
+        <div class="curso-hero-tags">
+          <span>Habilidades digitales</span>
+          <span>Presencial · En línea · In-Company</span>
+          <span>Duración: 18 hrs</span>
+        </div>
+        <h1>Power BI - Visualización y Modelado de Datos</h1>
+        <p class="curso-hero-desc">Aprende a transformar datos en información clara, relevante y accionable para fortalecer la toma de decisiones en tu organización.</p>
+        <div class="curso-hero-meta">
+          <span>Modalidad flexible</span>
+          <span>Nivel intermedio</span>
+          <span>Constancia de participación</span>
+        </div>
+        <div class="curso-hero-cta">
+          <a href="#cotizador" class="curso-cta-primary">Cotizar este curso</a>
+          <a href="https://wa.me/522212317004" target="_blank" rel="noopener" class="curso-cta-secondary"><i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar información por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="course-layout">
+      <div class="course-main">
+        <section class="course-experience">
+          <div class="course-experience-copy">
+            <p>Experiencia CCE</p>
+            <h2>Capacitación visual,<br />práctica y orientada a<br />resultados</h2>
+            <span>El detalle del curso integra recursos visuales para reforzar confianza, claridad y valor percibido desde el primer contacto.</span>
+          </div>
+          <img src="assets/images/heroes/detalle-curso.jpg" alt="Equipo empresarial analizando resultados" />
+        </section>
+
+    <section class="curso-seccion curso-descripcion">
+      <div class="curso-container curso-descripcion-card">
+        <p class="curso-eyebrow">Descripción del curso</p>
+        <h2>Forma equipos capaces de implementar una cultura de calidad total</h2>
+        <div class="curso-descripcion-copy">
+          <p>Este curso está diseñado para que los participantes comprendan, apliquen y gestionen principios de calidad total dentro de su organización. A través de herramientas prácticas, casos empresariales y ejercicios guiados, el equipo aprenderá a identificar áreas de mejora, optimizar procesos, elevar la satisfacción del cliente y construir sistemas de trabajo más eficientes.</p>
+        </div>
+        <div class="curso-descripcion-objetivo">
+          <p><strong>Objetivo general:</strong> desarrollar competencias para implementar prácticas de mejora continua, administración de procesos y enfoque al cliente, alineadas a los objetivos estratégicos de la empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="curso-seccion curso-perfil">
+      <div class="curso-container">
+        <div class="curso-section-heading">
+          <p class="curso-eyebrow">Perfil recomendado</p>
+          <h2>¿Para quién está orientado este curso?</h2>
+        </div>
+        <div class="perfil-grid">
+          <article class="perfil-card">
+            <svg class="perfil-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 12l2 2l4 -4"/><path d="M12.3 2.5a1.7 1.7 0 0 1 1.4 0l1.3 .6a1.7 1.7 0 0 0 .7 .1l1.4 -.1a1.7 1.7 0 0 1 1.2 .7l.8 1.1c.2 .2 .4 .4 .7 .5l1.3 .5a1.7 1.7 0 0 1 .8 1.1l.2 1.4c0 .3 .2 .5 .4 .7l1 .9a1.7 1.7 0 0 1 .4 1.4l-.4 1.4c-.1 .3 -.1 .5 0 .8l.4 1.4a1.7 1.7 0 0 1 -.4 1.4l-1 .9c-.2 .2 -.4 .4 -.4 .7l-.2 1.4a1.7 1.7 0 0 1 -.8 1.1l-1.3 .5c-.3 .1 -.5 .3 -.7 .5l-.8 1.1a1.7 1.7 0 0 1 -1.2 .7l-1.4 -.1a1.7 1.7 0 0 0 -.7 .1l-1.3 .6a1.7 1.7 0 0 1 -1.4 0l-1.3 -.6a1.7 1.7 0 0 0 -.7 -.1l-1.4 .1a1.7 1.7 0 0 1 -1.2 -.7l-.8 -1.1a1.7 1.7 0 0 0 -.7 -.5l-1.3 -.5a1.7 1.7 0 0 1 -.8 -1.1l-.2 -1.4a1.7 1.7 0 0 0 -.4 -.7l-1 -.9a1.7 1.7 0 0 1 -.4 -1.4l.4 -1.4c.1 -.3 .1 -.5 0 -.8l-.4 -1.4a1.7 1.7 0 0 1 .4 -1.4l1 -.9c.2 -.2 .4 -.4 .4 -.7l.2 -1.4a1.7 1.7 0 0 1 .8 -1.1l1.3 -.5c.3 -.1 .5 -.3 .7 -.5l.8 -1.1a1.7 1.7 0 0 1 1.2 -.7l1.4 .1a1.7 1.7 0 0 0 .7 -.1z"/></svg>
+            <h3>Mandos medios y gerenciales</h3>
+            <p>Responsables de equipos, procesos, operación, servicio, calidad o mejora continua.</p>
+          </article>
+          <article class="perfil-card">
+            <svg class="perfil-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 7a4 4 0 1 0 -8 0a4 4 0 0 0 8 0"/><path d="M12 14a7 7 0 0 0 -7 7h14a7 7 0 0 0 -7 -7"/></svg>
+            <h3>Personal operativo clave</h3>
+            <p>Colaboradores que participan directamente en procesos críticos de producción o servicio.</p>
+          </article>
+          <article class="perfil-card">
+            <svg class="perfil-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1"/><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M17 10h2a2 2 0 0 1 2 2v1"/><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path d="M3 13v-1a2 2 0 0 1 2 -2h2"/></svg>
+            <h3>Equipos administrativos</h3>
+            <p>Áreas que necesitan documentar, medir, mejorar y estandarizar procesos internos.</p>
+          </article>
+          <article class="perfil-card">
+            <svg class="perfil-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
+            <h3>Empresas en crecimiento</h3>
+            <p>Organizaciones que buscan profesionalizar sus sistemas de gestión y elevar su competitividad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="curso-seccion curso-aplicacion">
+      <div class="curso-container">
+        <div class="curso-section-heading">
+          <p class="curso-eyebrow">Aplicación empresarial</p>
+          <h2>Áreas donde puede aplicarse</h2>
+        </div>
+        <div class="aplicacion-grid" aria-label="Áreas de aplicación">
+          <span>Ingeniería</span><span>Producción</span><span>Operaciones</span><span>Diseño de procesos</span><span>Tecnología</span><span>Administración</span><span>Recursos Humanos</span><span>Servicio al cliente</span><span>Logística</span><span>Calidad</span><span>Dirección estratégica</span><span>Mejora continua</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-benefits" aria-label="Beneficios visuales del curso">
+      <figure class="course-benefit-card">
+        <img src="assets/images/courses/fotos-cursos/foto-curso15.webp" alt="Grupo participando en una capacitación presencial" />
+        <figcaption>Trabajo colaborativo</figcaption>
+      </figure>
+      <figure class="course-benefit-card">
+        <img src="assets/images/courses/fotos-cursos/foto-curso17.webp" alt="Indicadores de negocio y análisis de datos" />
+        <figcaption>Indicadores y mejora continua</figcaption>
+      </figure>
+      <figure class="course-benefit-card">
+        <img src="assets/images/courses/fotos-cursos/foto-curso18.webp" alt="Visualización y análisis de datos empresariales" />
+        <figcaption>Aplicación inmediata</figcaption>
+      </figure>
+    </section>
+
+    <section class="curso-seccion curso-temario" id="temario">
+      <div class="curso-container">
+        <div class="curso-section-heading">
+          <p class="curso-eyebrow">Contenido académico</p>
+          <h2>Temario del curso</h2>
+        </div>
+        <div class="temario-grid">
+          <details class="temario-card" open>
+            <summary><span class="temario-chip">Módulo 1</span><span class="temario-title">Fundamentos de la calidad total</span></summary>
+            <ul class="temario-bullets">
+              <li>Concepto de calidad y evolución de los modelos de gestión.</li>
+              <li>Principios de administración total de la calidad.</li>
+              <li>Enfoque al cliente interno y externo.</li>
+              <li>Cultura organizacional orientada a la mejora continua.</li>
+            </ul>
+          </details>
+          <details class="temario-card">
+            <summary><span class="temario-chip">Módulo 2</span><span class="temario-title">Procesos, indicadores y mejora continua</span></summary>
+            <ul class="temario-bullets">
+              <li>Mapeo y análisis de procesos clave.</li>
+              <li>Diseño de indicadores para seguimiento operativo.</li>
+              <li>Ciclos de mejora continua y solución de problemas.</li>
+            </ul>
+          </details>
+          <details class="temario-card">
+            <summary><span class="temario-chip">Módulo 3</span><span class="temario-title">Herramientas para la gestión de calidad</span></summary>
+            <ul class="temario-bullets">
+              <li>Herramientas básicas para el análisis de datos.</li>
+              <li>Priorización de causas y oportunidades de mejora.</li>
+              <li>Seguimiento de acciones correctivas y preventivas.</li>
+            </ul>
+          </details>
+          <details class="temario-card">
+            <summary><span class="temario-chip">Módulo 4</span><span class="temario-title">Implementación en la empresa</span></summary>
+            <ul class="temario-bullets">
+              <li>Planeación de iniciativas de mejora.</li>
+              <li>Roles, comunicación y adopción por parte del equipo.</li>
+              <li>Evaluación de resultados y sostenibilidad del cambio.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="curso-seccion curso-requisitos">
+      <div class="curso-container">
+        <div class="curso-section-heading">
+          <p class="curso-eyebrow">Requisitos técnicos</p>
+          <h2>¿Qué necesita el participante?</h2>
+        </div>
+        <div class="requisitos-grid">
+          <article class="requisitos-card">
+            <h3>Para modalidad en línea</h3>
+            <ul>
+              <li>Computadora, laptop o tablet.</li>
+              <li>Conexión estable a internet.</li>
+              <li>Acceso a Zoom, Meet o plataforma definida por CCE.</li>
+              <li>Correo electrónico activo.</li>
+              <li>Audífonos o micrófono para participar.</li>
+            </ul>
+          </article>
+          <article class="requisitos-card">
+            <h3>Para modalidad presencial</h3>
+            <ul>
+              <li>Disponibilidad de horario del equipo participante.</li>
+              <li>Espacio adecuado para capacitación si es In-Company.</li>
+              <li>Proyector o pantalla, en caso de impartirse en la empresa.</li>
+              <li>Lista de participantes para control y constancias.</li>
+              <li>Materiales operativos si se requiere práctica específica.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+      </div>
+
+      <aside class="course-sidebar" aria-label="Información del curso">
+        <section class="course-summary-card">
+          <figure class="course-summary-image">
+            <img src="assets/images/detail/resumen-capacitacion.png" alt="Resumen visual de capacitación empresarial" />
+            <figcaption>Curso adaptable a objetivos de negocio</figcaption>
+          </figure>
+          <h2>Resumen del curso</h2>
+          <dl class="course-summary-list">
+            <div><dt>Categoría</dt><dd>Gestión de la Calidad</dd></div>
+            <div><dt>Modalidad</dt><dd>Presencial, online o In-Company</dd></div>
+            <div><dt>Duración</dt><dd>30 horas</dd></div>
+            <div><dt>Participantes sugeridos</dt><dd>1 a 25 por grupo</dd></div>
+            <div><dt>Tipo de curso</dt><dd>Empresarial personalizable</dd></div>
+          </dl>
+          <a class="course-quote-button" href="#cotizador">Cotizar curso</a>
+          <a class="course-email-button" href="mailto:capacitacion.empresarial@uvp.mx">Enviar correo</a>
+        </section>
+
+        <section class="course-contact-card" id="contacto">
+          <h2>Contacto CCE</h2>
+          <p>Un asesor puede ayudarte a definir modalidad, fechas, temario y propuesta económica.</p>
+          <p><a href="https://wa.me/522212317004" target="_blank" rel="noopener">WhatsApp: 22 12 31 70 04</a></p>
+          <p>Tel. 222 266 94 88 / 89 ext. 130</p>
+          <p>capacitacion.empresarial@uvp.mx</p>
+          <p>Calle 3 Sur 5759, El Cerrito, 72440 Puebla, Puebla de Zaragoza.</p>
+        </section>
+
+      </aside>
+    </div>
+
+    <section class="cotizador" id="cotizador">
+      <div class="cotizador-container">
+        <div class="cotizador-info">
+          <h2>Solicita una propuesta de capacitación para tu empresa</h2>
+          <p class="cotizador-como-funciona">¿Cómo funciona?</p>
+          <ol class="cotizador-pasos">
+            <li class="cotizador-paso"><span class="cotizador-paso-numero">1</span><div><h3>Comparte tus necesidades</h3><p>Selecciona el curso o eje de capacitación que más se adapte a tu empresa.</p></div></li>
+            <li class="cotizador-paso"><span class="cotizador-paso-numero">2</span><div><h3>Personalizamos la propuesta</h3><p>Definimos modalidad, participantes, contenidos y objetivos de acuerdo con tus requerimientos.</p></div></li>
+            <li class="cotizador-paso"><span class="cotizador-paso-numero">3</span><div><h3>Recibe propuesta</h3><p>Nuestro equipo te enviará una propuesta personalizada y dará seguimiento a tu solicitud.</p></div></li>
+          </ol>
+        </div>
+        <form class="cotizador-form">
+          <h2>Solicita una propuesta</h2>
+          <div class="cotizador-campos">
+            <label><span class="sr-only">Nombre</span><input type="text" name="nombre" placeholder="Nombre" autocomplete="name" required /></label>
+            <label><span class="sr-only">Empresa</span><input type="text" name="empresa" placeholder="Empresa" autocomplete="organization" required /></label>
+            <label><span class="sr-only">Correo empresarial</span><input type="email" name="correo" placeholder="Correo empresarial" autocomplete="email" required /></label>
+            <label><span class="sr-only">WhatsApp</span><input type="tel" name="whatsapp" placeholder="WhatsApp" autocomplete="tel" required /></label>
+            <label class="cotizador-campo-completo"><span class="sr-only">Curso o eje de interés</span><select name="interes" required><option value="" selected disabled>Selecciona curso o eje de interés</option><option value="digitales">Habilidades digitales</option><option value="calidad">Gestión de la calidad</option><option value="otro">Otro</option></select></label>
+            <label><span class="sr-only">Modalidad deseada</span><select name="modalidad" required><option value="" selected disabled>Modalidad deseada</option><option value="presencial">Presencial</option><option value="linea">En línea</option><option value="hibrida">Híbrida</option><option value="in-company">In-Company</option></select></label>
+            <label><span class="sr-only">Número de participantes</span><input type="number" name="participantes" placeholder="Número de participantes" min="1" required /></label>
+            <label><span class="sr-only">Tipo de constancia</span><select name="constancia" required><option value="" selected disabled>Tipo de constancia</option><option value="institucional">Constancia institucional</option><option value="dc3">DC-3 (STPS)</option><option value="conocer">Certificación CONOCER</option></select></label>
+            <label><span class="sr-only">Ciudad o localidad</span><input type="text" name="ciudad" placeholder="Ciudad / Localidad" autocomplete="address-level2" required /></label>
+            <label class="cotizador-campo-completo"><span class="sr-only">Objetivo de capacitación</span><textarea name="objetivo" rows="3" placeholder="Cuéntanos el objetivo de capacitación" required></textarea></label>
+          </div>
+          <button type="submit" class="cotizador-btn">Recibir propuesta personalizada</button>
+          <p class="cotizador-aviso">Tus datos serán utilizados únicamente para dar seguimiento a tu solicitud de capacitación.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="curso-seccion curso-relacionados">
+      <div class="curso-container">
+        <div class="curso-section-heading curso-relacionados-heading">
+          <p class="curso-eyebrow">Cursos relacionados</p>
+          <h2>Continúa fortaleciendo a tu equipo</h2>
+          <p>Explora más programas por eje de capacitación y encuentra la mejor opción para tu equipo.</p>
+        </div>
+        <div class="relacionados-carousel">
+          <button class="relacionados-control relacionados-control-prev" id="relacionadosPrev" type="button" aria-label="Ver cursos relacionados anteriores">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+          </button>
+          <div class="relacionados-viewport">
+            <div class="relacionados-track" id="relacionadosTrack">
+            <article class="relacionado-card">
+              <img src="assets/images/courses/fotos-cursos/foto-curso11.webp" alt="Curso de Excel Básico" />
+              <div><p>Habilidades digitales</p><h3>Excel Básico</h3><span>8 hrs</span><a href="detalle.html">Ver curso</a></div>
+            </article>
+            <article class="relacionado-card">
+              <img src="assets/images/courses/fotos-cursos/foto-curso1.webp" alt="Curso de Control estadístico de procesos" />
+              <div><p>Gestión de la calidad</p><h3>Control estadístico de procesos</h3><span>12 hrs</span><a href="detalle.html">Ver curso</a></div>
+            </article>
+            <article class="relacionado-card">
+              <img src="assets/images/courses/fotos-cursos/foto-curso4.webp" alt="Curso de Las 7 Herramientas de la calidad" />
+              <div><p>Gestión de la calidad</p><h3>Las 7 Herramientas de la calidad</h3><span>8 hrs</span><a href="detalle.html">Ver curso</a></div>
+            </article>
+            <article class="relacionado-card">
+              <img src="assets/images/courses/fotos-cursos/foto-curso9.webp" alt="Curso de Administración exitosa de proyectos" />
+              <div><p>Planeación estratégica</p><h3>Administración exitosa de proyectos</h3><span>12 hrs</span><a href="detalle.html">Ver curso</a></div>
+            </article>
+            <article class="relacionado-card">
+              <img src="assets/images/courses/fotos-cursos/foto-curso8.webp" alt="Curso de Liderazgo efectivo" />
+              <div><p>Gestión del talento humano</p><h3>Liderazgo efectivo</h3><span>8 hrs</span><a href="detalle.html">Ver curso</a></div>
+            </article>
+            <article class="relacionado-card">
+              <img src="assets/images/courses/fotos-cursos/foto-curso14.webp" alt="Curso de Riesgos y Seguridad en el Trabajo" />
+              <div><p>Seguridad e higiene</p><h3>Riesgos y Seguridad en el Trabajo</h3><span>8 hrs</span><a href="detalle.html">Ver curso</a></div>
+            </article>
+            </div>
+          </div>
+          <button class="relacionados-control relacionados-control-next" id="relacionadosNext" type="button" aria-label="Ver más cursos relacionados">
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-footer-cta-wrap">
+      <div class="course-footer-cta">
+        <div>
+          <h2>¿Quieres adaptar este curso a tu empresa?</h2>
+          <p>Comparte tus necesidades y el equipo del CCE podrá preparar una propuesta técnica y económica a la medida.</p>
+        </div>
+        <a href="#cotizador">Iniciar cotización</a>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ============================================
+       FOOTER — NUEVA ESTRUCTURA
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col footer-col-desc">
+        <div class="footer-brand">Centro de Capacitación <span>Empresarial UVP</span></div>
+        <p>Somos una plataforma de educación en línea comprometida con la excelencia académica y la innovación constante. Capacitación práctica que transforma equipos y resultados.</p>
+        <a href="https://wa.me/521" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:#25D366;color:#fff;font-size:0.82rem;font-weight:700;text-decoration:none;transition:transform var(--transition-fast);">
+          <i class="fab fa-whatsapp"></i> Contáctanos
+        </a>
+      </div>
+      <div class="footer-col">
+        <h3>Mapa de sitio</h3>
+        <ul>
+          <li><a href="#nosotros"><i class="fas fa-arrow-right"></i>Nosotros</a></li>
+          <li><a href="#ejes"><i class="fas fa-arrow-right"></i>Ejes</a></li>
+          <li><a href="cursos.html"><i class="fas fa-arrow-right"></i>Cursos</a></li>
+          <li><a href="#certificaciones"><i class="fas fa-arrow-right"></i>STPS / CONOCER</a></li>
+          <li><a href="#guias"><i class="fas fa-arrow-right"></i>Recursos</a></li>
+          <li><a href="#cotizador"><i class="fas fa-arrow-right"></i>Cotizar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-arrow-right"></i>Aviso de privacidad</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i>Términos y condiciones</a></li>
+          <li><a href="#"><i class="fas fa-arrow-right"></i>Política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Calle 3 Sur 5759, Col. El Cerrito, CP 72440, Puebla</p>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.74a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg>
+          <p>+52 222 123 4567<br />+52 222 987 6543</p>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <p>contacto@cceuvp.com</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Síguenos</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073C0 18.1 4.388 23.136 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.136 24 18.1 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Centro de Capacitación Empresarial UVP. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <footer class="footer footer-legacy" hidden>
+    <div class="footer-grid">
+      <div class="footer-col footer-col-desc">
+        <div class="footer-brand">Centro de Capacitación <span>Empresarial UVP</span></div>
+        <p>Somos una plataforma de educación en línea comprometida con la excelencia académica y la innovación constante. Capacitación práctica que transforma equipos y resultados.</p>
+        <a href="https://wa.me/521" target="_blank" rel="noopener" class="footer-whatsapp"><i class="fab fa-whatsapp"></i> Contáctanos</a>
+      </div>
+      <div class="footer-col"><h3>Mapa de sitio</h3><ul><li><a href="index.html#nosotros"><i class="fas fa-arrow-right"></i>Nosotros</a></li><li><a href="index.html#ejes"><i class="fas fa-arrow-right"></i>Ejes</a></li><li><a href="cursos.html"><i class="fas fa-arrow-right"></i>Cursos</a></li><li><a href="index.html#certificaciones"><i class="fas fa-arrow-right"></i>STPS / CONOCER</a></li><li><a href="index.html#guias"><i class="fas fa-arrow-right"></i>Recursos</a></li><li><a href="index.html#cotizador"><i class="fas fa-arrow-right"></i>Cotizar</a></li></ul></div>
+      <div class="footer-col"><h3>Legal</h3><ul><li><a href="#"><i class="fas fa-arrow-right"></i>Aviso de privacidad</a></li><li><a href="#"><i class="fas fa-arrow-right"></i>Términos y condiciones</a></li><li><a href="#"><i class="fas fa-arrow-right"></i>Política de cookies</a></li></ul></div>
+      <div class="footer-col"><h3>Contacto</h3><div class="footer-contact-item"><svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><p>Calle 3 Sur 5759, Col. El Cerrito, CP 72440, Puebla</p></div><div class="footer-contact-item"><svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.74a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg><p>+52 222 123 4567<br />+52 222 987 6543</p></div><div class="footer-contact-item"><svg class="footer-contact-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><p>contacto@cceuvp.com</p></div></div>
+      <div class="footer-col"><h3>Síguenos</h3><div class="footer-social"><a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073C0 18.1 4.388 23.136 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.136 24 18.1 24 12.073z"/></svg></a><a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg></a></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Centro de Capacitación Empresarial UVP. Todos los derechos reservados.</p></div>
+  </footer>
+
+  <a href="https://wa.me/521" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="whatsapp-float-tooltip">Escríbenos</span></a>
+
+  <script src="scripts/animations.js" defer></script>
+  <script src="scripts/ui-interactions.js" defer></script>
+  <script>
+    (function () {
+      function initRelatedCoursesCarousel() {
+        var track = document.getElementById('relacionadosTrack');
+        var carousel = track && track.closest('.relacionados-carousel');
+        var previous = document.getElementById('relacionadosPrev');
+        var next = document.getElementById('relacionadosNext');
+        var viewport = track && track.parentElement;
+        var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!track || !carousel || !previous || !next || !viewport || track.children.length < 2) return;
+
+        var timer = null;
+        var isMoving = false;
+
+        function getOffset() {
+          var firstCard = track.firstElementChild;
+          var gap = parseFloat(window.getComputedStyle(track).gap) || 0;
+          return firstCard ? firstCard.getBoundingClientRect().width + gap : 0;
+        }
+
+        function moveNext() {
+          if (isMoving) return;
+          var firstCard = track.firstElementChild;
+          if (!firstCard) return;
+          var offset = getOffset();
+          if (!offset) return;
+          isMoving = true;
+          track.style.transform = 'translateX(-' + offset + 'px)';
+          window.setTimeout(function () {
+            track.style.transition = 'none';
+            track.appendChild(firstCard);
+            track.style.transform = 'translateX(0)';
+            window.requestAnimationFrame(function () {
+              track.style.transition = '';
+              isMoving = false;
+            });
+          }, 600);
+        }
+
+        function movePrevious() {
+          if (isMoving) return;
+          var lastCard = track.lastElementChild;
+          var offset = getOffset();
+          if (!lastCard || !offset) return;
+          isMoving = true;
+          track.style.transition = 'none';
+          track.insertBefore(lastCard, track.firstElementChild);
+          track.style.transform = 'translateX(-' + offset + 'px)';
+          window.requestAnimationFrame(function () {
+            track.style.transition = '';
+            track.style.transform = 'translateX(0)';
+          });
+          window.setTimeout(function () {
+            isMoving = false;
+          }, 600);
+        }
+
+        function start() {
+          if (!reducedMotion && !timer) timer = window.setInterval(moveNext, 4000);
+        }
+        function stop() {
+          window.clearInterval(timer);
+          timer = null;
+        }
+
+        previous.addEventListener('click', movePrevious);
+        next.addEventListener('click', moveNext);
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('mouseleave', start);
+        carousel.addEventListener('focusin', stop);
+        carousel.addEventListener('focusout', function (event) {
+          if (!carousel.contains(event.relatedTarget)) start();
+        });
+
+        var touchStartX = null;
+        viewport.addEventListener('touchstart', function (event) {
+          touchStartX = event.changedTouches[0].clientX;
+        }, { passive: true });
+        viewport.addEventListener('touchend', function (event) {
+          if (touchStartX === null) return;
+          var distance = event.changedTouches[0].clientX - touchStartX;
+          touchStartX = null;
+          if (Math.abs(distance) < 50) return;
+          if (distance > 0) movePrevious();
+          else moveNext();
+        }, { passive: true });
+
+        start();
+      }
+
+      document.addEventListener('DOMContentLoaded', initRelatedCoursesCarousel);
+    })();
+  </script>
+</body>
+</html>
