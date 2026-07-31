@@ -160,6 +160,67 @@
   }
 
   /* ============================================
+     EJE CARDS — WHOLE-CARD NAVIGATION
+     ============================================ */
+  function initEjeCardNavigation() {
+    document.querySelectorAll('.eje-card').forEach(function (card) {
+      var link = card.querySelector('.eje-link');
+      if (!link) return;
+
+      card.setAttribute('role', 'link');
+      card.tabIndex = 0;
+
+      card.addEventListener('click', function (event) {
+        if (event.target.closest('.eje-link')) return;
+        window.location.href = link.href;
+      });
+
+      card.addEventListener('keydown', function (event) {
+        if (event.target.closest('.eje-link') || (event.key !== 'Enter' && event.key !== ' ')) return;
+        event.preventDefault();
+        window.location.href = link.href;
+      });
+    });
+  }
+
+  /* ============================================
+     COTIZADOR — COURSES BY TRAINING AXIS
+     ============================================ */
+  function initCotizadorCourseSelection() {
+    document.querySelectorAll('.cotizador-form').forEach(function (form) {
+      var ejeSelect = form.querySelector('[name="eje"]');
+      var courseSelect = form.querySelector('[name="curso"]');
+      if (!ejeSelect || !courseSelect) return;
+
+      function populateCourses() {
+        var category = ejeSelect.value;
+        courseSelect.innerHTML = '';
+
+        var prompt = document.createElement('option');
+        prompt.value = '';
+        prompt.selected = true;
+        prompt.textContent = category ? 'Selecciona un curso' : 'Selecciona primero un eje de interés';
+        courseSelect.appendChild(prompt);
+        courseSelect.disabled = !category;
+
+        if (!category) return;
+
+        cursosData.filter(function (course) {
+          return course.category === category;
+        }).forEach(function (course) {
+          var option = document.createElement('option');
+          option.value = course.title;
+          option.textContent = course.title;
+          courseSelect.appendChild(option);
+        });
+      }
+
+      ejeSelect.addEventListener('change', populateCourses);
+      populateCourses();
+    });
+  }
+
+  /* ============================================
      CURSOS — REAL-TIME FILTER
      ============================================ */
   function initCursos() {
@@ -426,6 +487,8 @@
      ============================================ */
   document.addEventListener('DOMContentLoaded', function () {
     initHamburger();
+    initEjeCardNavigation();
+    initCotizadorCourseSelection();
     initCursos();
     initFaqAccordion();
     initResourceModal();
