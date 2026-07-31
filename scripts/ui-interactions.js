@@ -215,9 +215,27 @@
       }
       visibleCourses.forEach(function (curso) {
         var card = document.createElement('a');
-        card.className = 'curso-card';
+        var isStpsCourse = curso.credential === 'stps';
+        var isConocerCourse = curso.category === 'conocer';
+        var credentialDetails = isStpsCourse
+          ? '<div class="curso-credential-details">' +
+              '<p>Capacitación con validez oficial</p>' +
+              '<img src="assets/images/certifications/stps-logo.png" alt="Secretaría del Trabajo y Previsión Social" class="curso-credential-logo">' +
+            '</div>'
+          : isConocerCourse
+            ? '<div class="curso-credential-details curso-credential-details-conocer">' +
+                '<p>Certificación de competencias laborales</p>' +
+                '<img src="assets/images/certifications/conocer-logo.png" alt="Red CONOCER" class="curso-credential-logo curso-credential-logo-conocer">' +
+              '</div>'
+            : '';
+        var courseImage = isConocerCourse
+          ? ''
+          : '<img src="' + curso.image + '" alt="' + curso.title + '" class="curso-image" loading="lazy">';
+
+        card.className = 'curso-card' + (isStpsCourse ? ' curso-card-stps' : '') + (isConocerCourse ? ' curso-card-conocer' : '');
         card.href = 'detalle.html';
         card.dataset.category = curso.category;
+        if (curso.credential) card.dataset.credential = curso.credential;
         if (!prefersReducedMotion) {
           card.style.opacity = '0';
           card.style.transform = 'translateY(20px)';
@@ -225,9 +243,10 @@
         }
 
         card.innerHTML =
-          '<img src="' + curso.image + '" alt="' + curso.title + '" class="curso-image" loading="lazy">' +
+          courseImage +
           '<div class="curso-content">' +
             '<span class="curso-category">' + getCategoryLabel(curso.category) + '</span>' +
+            credentialDetails +
             '<h3 class="curso-title">' + curso.title + '</h3>' +
             '<p class="curso-desc">' + curso.shortDesc + '</p>' +
             '<div class="curso-meta">' +
