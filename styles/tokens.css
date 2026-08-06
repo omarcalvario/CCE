@@ -217,7 +217,7 @@ button { cursor: pointer; font-family: 'Inter', sans-serif; }
   display: flex; align-items: center; gap: 10px;
   text-decoration: none; z-index: 110;
 }
-.navbar-logo .logo-img { height: 36px; width: auto; object-fit: contain; }
+.navbar-logo .logo-img { height: 45px; width: auto; object-fit: contain; }
 
 .navbar-cotizar {
   position: relative; overflow: hidden;
@@ -700,6 +700,7 @@ h1 span {
 .eje-card[data-eje="5"] { --eje-color: #ef4444; }
 .eje-card[data-eje="6"] { --eje-color: #10b981; }
 .eje-card[data-eje="7"] { --eje-color: #3b82f6; }
+.eje-card[data-eje="8"] { --eje-color: #FF3B61; }
 
 .ejes-particles { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
 .particle {
@@ -822,9 +823,16 @@ h1 span {
 }
 
 .testimonio-cargo {
-  margin: 0;
-  color: #6b5a7d;
-  font-size: 0.84rem;
+  display: inline-block;
+  margin: 8px 0 0;
+  padding: 4px 12px;
+  background: var(--color-primary-50);
+  color: var(--color-primary-700);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-primary-200);
+  width: fit-content;
 }
 
 @media (prefers-reduced-motion: reduce) {
